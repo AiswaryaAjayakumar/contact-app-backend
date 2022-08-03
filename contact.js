@@ -17,7 +17,7 @@ app.post('/contact',(req,res)=>{
     var contactObject= new contactModel(req.body)
     res.json(contactObject)
 })
-app.listen(process.env.POST||3005,()=>{
+app.listen(process.env.PORT||3005,()=>{
 
     console.log("Server started at http://localhost:3005/")
 })
